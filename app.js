@@ -22,13 +22,14 @@ es crear una carpeta nueva dentro de la carpeta public
 a la que llamaremos hola-mundo. Al coincidir con el path
 se mostrará el contenido html de esa carpeta
 */
+/*
 app.get('/', (req,res)=>{
     res.render('home',{
         nombre: 'Manu',
         titulo: 'Curso de Node'
     });
 });
-
+*/
 
 app.get('/elements', (req,res) =>{
     res.render('elements',{
@@ -46,7 +47,7 @@ app.get('/generic', (req,res) =>{
 
 
 app.get('*', (req,res)=>{
-    res.sendFile(__dirname + '/back/404.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 
